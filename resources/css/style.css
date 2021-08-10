@@ -531,9 +531,15 @@ main div {
         padding-left: 2rem;
     }
 
+    .exhibitTitle h1 {
+        font-size: 2.5rem;
+        color: rgb(94, 92, 92);
+    }
+
     /* making youtube videos responsive --------------------------- */
 
-    .exhibitMobile {
+
+    .exhibitMobile{
         display: block;
         position: relative;
         width: 100%;
