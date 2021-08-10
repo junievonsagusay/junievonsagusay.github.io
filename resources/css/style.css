@@ -1,0 +1,476 @@
+html {
+    font-size: 16px;
+    font-family: Arial;
+}
+
+body{
+    text-align: center;
+}
+/*header --------------------------*/
+
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 4rem;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+
+.companyLogo {
+    display: inline-flex;
+    color: gray;
+    font-size: 2rem;
+}
+
+.companyLogo img {
+    padding-top: 0.1rem;
+   
+}
+
+.companyLogo p {
+    margin-top: 0.5rem;
+}
+
+.companyLogo span {
+    font-weight: 800;
+    color: rgb(80, 79, 79);
+
+}
+
+header ul {
+    display: inline-flex;
+   
+}
+
+header li {
+    margin-right: 1.5rem;
+    list-style-type: none;
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    color: rgb(80, 79, 79);
+
+}
+
+
+  li a:link {
+    text-decoration: none;
+    color: rgb(80, 79, 79);
+  }
+  
+ li a:visited {
+    text-decoration: none;
+    color: rgb(80, 79, 79);
+  }
+  
+ li a:hover {
+    color: rgb(41, 40, 40);
+    transition: font-size 300ms linear;
+    font-size: 1.2rem;
+  }
+  
+ li a:active {
+    text-decoration: underline;
+  }
+
+
+  /*banner --------------------------*/
+.banner {
+    width: 100%;
+}
+
+  .bannerBox {
+    display: inline-flex;
+    margin-top: 3.5rem;
+    background-color: rgb(165, 163, 163);
+    width: 100%;
+    left: 0;
+    box-sizing: border-box;
+    
+  }
+
+.banner .bannerPic {
+    width: 60%;
+}
+
+.banner .bannerMsg {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  .banner img {
+      width: 100%;
+      padding: 2rem;
+  }
+
+  .bannerMsg .learn {
+      color:rgb(80, 79, 79);
+      padding: 0 1rem;
+  }
+
+  h1 {
+      font-size: 3rem;
+      padding: 0 1rem;
+  }
+
+  .learn p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  button {
+      width: 60%;
+      height: 100%;
+      color:white;
+      background-color: rgb(65, 62, 62);
+      font-size: 1.5rem;
+  }
+
+ /*main --------------------------*/
+main div {
+   
+}
+
+ main {
+   width: 100%;
+}
+
+ .mainBig {
+     display: inline-flex;
+     height: 55rem;
+     width: 100%;
+     box-sizing: border-box;
+     color: rgb(80, 79, 79);
+
+ 
+ }
+
+.mainBig .main60 {
+    width: 60%;
+    box-sizing: border-box;
+    align-content: space-between;
+    text-align: left;
+    padding: 2rem;
+ }
+
+.mainBig .main40 {
+     width: 40%;
+     box-sizing: border-box;
+  }
+
+ .mainSmall {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .guyReading {
+     overflow: hidden;
+ }
+
+ .guyReading img {
+    width: 100%;
+    box-sizing: border-box;
+ }
+
+.latinMsg {
+    font-size: 1.3rem;;
+}
+
+ .right {
+    display: inline-flex;
+    box-sizing: border-box;
+    height: 30%;
+    margin: 1rem;
+}
+
+ .smallMsgs {
+     display: flex;
+     flex-direction: column;
+     width: 60%;
+     padding: 1rem;
+     text-align: left;
+     color: rgb(94, 92, 92);
+
+ }
+
+.smallMsgs a {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(71, 99, 192);
+}
+
+ .smallPics {
+     width:35%;
+     overflow: hidden;
+ }
+
+ .smallPics img {
+     padding: 2rem 1rem;
+     width: 100%;
+     box-sizing: border-box;
+     
+ }
+
+ .oliver {
+     background-color: rgb(201, 201, 201);
+ }
+
+ .topic {
+     font-size: 1.5rem;
+ }
+
+  /*feature (Start Learning)--------------------------*/
+
+
+
+.featureBig {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 60rem;
+    width: 100%;
+    background-color: rgb(201, 201, 201);
+}
+
+.featureBig img {
+    width: 100%;
+}
+
+.feature1, .feature2 {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: left;
+    height: 40%;
+    color: gray;
+}
+
+.indivBox {
+    width: 30%;
+    background-color: white;
+    max-width: 25rem;
+    min-width: 15rem;
+    margin: 0 1rem;
+    min-height: 20rem;
+    max-height: 30rem;
+}
+
+.coursePic {
+    height: 50%;
+    width: auto;
+}
+
+.coursePic img {
+    width: 100%;
+}
+
+.nameOfCourse, .course, .courseInfo {
+    padding-left: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    height: 5%
+}
+
+.start {
+    height: 10%;
+}
+
+.start h1 {
+    color: rgb(94, 92, 92);
+}
+
+  /*Exhibit --------------------------*/
+
+
+  .exhibitTitle, .exhibit {
+    color: rgb(94, 92, 92);
+  }
+
+  .exhibit {
+      display: inline-flex;
+      width: 100%;
+  }
+
+  .vidArea {
+      width: 60%;
+
+  }
+.actualVid iframe {
+    width: 90%;
+
+}
+
+.reimagine, .secondLatin {
+    text-align: left;
+    width: 90%;
+    margin-left: 5%;
+}
+
+  .miniFeatures {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+   align-content: space-between;
+  }
+
+.minifeature {
+    display: inline-flex;
+
+}
+
+.miniFeatBoxes {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    justify-content: left;
+}
+
+.minifeat1 {
+    width: 35%;
+}
+
+.miniFeat1 img {
+    width: 100%;
+}
+
+
+.miniFeatBoxes img {
+    width: 100%;
+}
+
+.miniFeatTitle, .miniFeatDescp {
+    text-align: left;
+    padding: 0.5rem 0 0 2rem;
+}
+
+   /*Footer --------------------------*/
+
+  footer {
+      bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid rgb(94, 92, 92);
+      color: rgb(94, 92, 92);
+  }
+
+  .copyRight {
+    padding-left: 1rem;
+  }
+
+  footer ul {
+     display: inline-flex;
+  }
+
+  footer ul li {
+    margin: 0 0.5rem;
+    list-style-type: none;
+  }
+
+  footer ul li a {
+    text-decoration: none;
+  }
+
+  /*Media Queries --------------------------*/
+
+
+
+  /*PC Screen --------------------------*/
+  @media only screen and (min-width: 424) and (max-width: 2560px) {
+ 
+   .mobile {
+    display: none;
+    }
+ 
+}
+
+
+/*Mobile Screen --------------------------*/
+@media only screen and (min-width: 425px) and (max-width: 785px) {
+
+    .desktop {
+         display: none;
+    }
+
+    .mobile {
+    
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 4rem;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background-color: white;
+    }
+
+    .mobile img {
+        padding: 0.7rem 2rem;
+    }
+
+    .banner div {
+        display: block;
+     }
+
+    h1 {
+        font-size: 2rem;
+        
+    }
+
+    p, button {
+        font-size: 1rem;
+    }
+
+    .bannerBox {
+        width: 100%;
+
+    }
+
+    .banner .bannerMsg, .banner .bannerPic {
+        width: 100%;
+    }
+
+     .bannerPic img {
+        padding: 0;
+    }
+
+    .mainBig .main40 {
+        width: 100%;
+
+    }
+
+    .mainBig {
+        height: auto;
+    }
+
+    .right {
+        display: block;
+        height: auto;
+        margin: 0;
+    }
+
+    .smallPics {
+        width: 100%;
+    }
+
+    .smallPics img {
+  
+        padding: 0;
+    }
+
+    .smallMsgs {
+        padding-left: 1rem;
+        width: 100%;
+    }
+
+}
