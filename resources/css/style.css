@@ -393,7 +393,7 @@ main div {
 
 
   /*PC Screen --------------------------*/
-  @media only screen and (min-width: 786) and (max-width: 2560px) {
+  @media only screen and (min-width: 769) and (max-width: 2560px) {
  
    .mobile {
     display: none;
@@ -401,9 +401,8 @@ main div {
  
 }
 
-
-/*Mobile Screen --------------------------*/
-@media only screen and (min-width: 425px) and (max-width: 785px) {
+/*tablet Screen --------------------------*/
+@media only screen and (min-width: 425px) and (max-width: 768px) {
 
     .desktop {
          display: none;
