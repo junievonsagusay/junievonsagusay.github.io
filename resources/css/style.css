@@ -87,7 +87,7 @@ header li {
   .bannerBox {
     display: inline-flex;
     margin-top: 3.5rem;
-    background-color: rgb(165, 163, 163);
+    background-color: rgb(204, 203, 203);
     width: 100%;
     left: 0;
     box-sizing: border-box;
@@ -255,6 +255,11 @@ main div {
     color: gray;
 }
 
+.mobileFeat {
+    display: none;
+}
+
+
 .indivBox {
     width: 30%;
     background-color: white;
@@ -385,7 +390,7 @@ main div {
 
 
   /*PC Screen --------------------------*/
-  @media only screen and (min-width: 424) and (max-width: 2560px) {
+  @media only screen and (min-width: 786) and (max-width: 2560px) {
  
    .mobile {
     display: none;
@@ -399,6 +404,10 @@ main div {
 
     .desktop {
          display: none;
+    }
+
+    .featureBig .desktop {
+        display: none;
     }
 
     .mobile {
@@ -455,8 +464,9 @@ main div {
 
     .right {
         display: block;
+        margin-top: 1rem;
+        padding: 0 1rem;
         height: auto;
-        margin: 0;
     }
 
     .smallPics {
@@ -472,5 +482,68 @@ main div {
         padding-left: 1rem;
         width: 100%;
     }
+
+    .right.oliver {
+        background-color: white;
+    }
+    
+    .smallMsgs h2 {
+        margin: 0.1rem 0 0 0;
+    }
+
+    .mobileFeat {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobileFeatBox1 h1 {
+        position: relative;
+        font-size: 2.5rem;
+        color: rgb(94, 92, 92);
+        background-color: white;
+        margin: 1rem 0;
+        border-top: 0.3px solid rgb(190, 190, 190);
+        padding: 2rem 0 0 1rem;
+        font-weight: bolder;
+    }
+
+    .mobileFeatBox2 {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        color: rgb(94, 92, 92);
+
+    }
+
+    .mobileFeatBoxes {
+        margin: 0.5rem;
+        background-color: rgb(204, 203, 203);
+    }
+
+    .mobileFeatBoxes h2 {
+        padding-left: 2rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
