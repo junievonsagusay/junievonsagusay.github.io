@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Colmar Academy</title>
-    <link rel="stylesheet" type="text/css" href="resources/css/style.css"> 
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-    <header class="desktop tablet">
-            <div class="companyLogo">
-                <img src="resources/images/ic-logo.svg">
-                <p><span>COLMAR</span>ACADEMY</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Campus</a></li>
-                    <li><a href="#">Online</a></li>
-                    <li><a href="#">Companies</a></li>
-                    <li><a href="#">Sign in</a></li>
-                </ul>
-            </nav>
+    <header class="desktop">
+        <div class="companyLogo">
+            <img src="resources/images/ic-logo.svg">
+            <p><span>COLMAR</span>ACADEMY</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Campus</a></li>
+                <li><a href="#">Online</a></li>
+                <li><a href="#">Companies</a></li>
+                <li><a href="#">Sign in</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="mobile">
+    <header class="mobileHeader mobile">
         <img src="resources/images/ic-logo.svg">
         <img src="resources/images/ic-on-campus.svg">
         <img src="resources/images/ic-online.svg">
         <img src="resources/images/ic-login.svg">
-    </div>
-    <banner class="banner tablet">
+    </header>
+    <main class="banner">
         <div class="bannerBox">
             <div class="bannerPic">
                 <img src="resources/images/banner.jpg">
@@ -40,29 +42,34 @@
                 </div>
                 <div class="button">
                     <a href="#">
-                    <button type="button">Start here</button>
+                        <button type="button">Start here</button>
                     </a>
                 </div>
-         </div>
+            </div>
         </div>
-    </banner>
-    <main class="mainBig tablet">
-        <div class="mainSmall main60 desktop">
+    </main>
+    <section class="mainBig">
+        <article class="mainSmall main60 desktop">
             <div class="guyReading">
                 <img src="resources/images/information-main.jpg">
             </div>
-            <div class="hurt">
-                <h1>It doesn't hurt to keep practicing</h1>
+            <div class="caption">
+                <div class="hurt">
+                    <h2>It doesn't hurt to keep practicing</h2>
+                </div>
+                <div class="latinMsg">
+                    <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat
+                        neque.
+                        Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor
+                        consequat, tristique ligula."</p>
+                </div>
+                <div class="emanuel">
+                    <p>Emanuel, Sr Strategist at Hiring.com</p>
+                </div>
             </div>
-            <div class="latinMsg">
-                <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
-            </div>
-            <div class="emanuel">
-                <p>Emanuel, Sr Strategist at Hiring.com</p>
-            </div>
-        </div>
-        <div class="mainSmall main40">
-            <div class="right">
+        </article>
+        <article class="mainSmall main40">
+            <div class="right orientation">
                 <picture class="smallPics">
                     <source media="(min-width:786px)" srcset="resources/images/information-orientation.jpg">
                     <img src="resources/images/information-orientation-mobile.jpg">
@@ -76,10 +83,10 @@
                     </div>
                     <div class="readMore">
                         <a href="#">Read more</a>
-                    </div>    
+                    </div>
                 </div>
             </div>
-            <div class="right">
+            <div class="right campus">
                 <picture class="smallPics">
                     <source media="(min-width:786px)" srcset="resources/images/information-campus.jpg">
                     <img src="resources/images/information-campus-mobile.jpg">
@@ -93,8 +100,8 @@
                     </div>
                     <div class="readMore">
                         <a href="#">Read more</a>
-                    </div>    
-                </div> 
+                    </div>
+                </div>
             </div>
             <div class="right oliver">
                 <picture class="smallPics">
@@ -110,15 +117,15 @@
                     </div>
                     <div class="readMore">
                         <a href="#">Read more</a>
-                    </div>    
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
-    <feature class="desktop tablet">
+        </article>
+    </section>
+    <feature class="startLearning desktop">
         <div class="featureBig">
             <div class="start">
-                <h1>Start Learning</h1>
+                <h2>Start Learning</h2>
             </div>
             <div class="feature1">
                 <div class="indivBox">
@@ -129,7 +136,7 @@
                         <h2>Software Engineering</h2>
                     </div>
                     <div class="course">
-                    <p>COURSES</p>
+                        <p>COURSES</p>
                     </div>
                     <div class="courseInfo">
                         <P>Web Development, Mobile Development, iOT, APIs</P>
@@ -173,7 +180,7 @@
                     <div class="nameOfCourse">
                         <h2>Data</h2>
                     </div>
-                    <div class ="course">
+                    <div class="course">
                         <p>COURSES</p>
                     </div>
                     <div class="courseInfo">
@@ -211,7 +218,7 @@
             </div>
         </div>
     </feature>
-    <feature class="mobileFeat tablet">
+    <feature class="mobileFeat mobile">
         <div class="mobileFeatBox1">
             <h1>Start Learning</h1>
         </div>
@@ -228,73 +235,75 @@
             <div class="mobileFeatBoxes">
                 <h2>Data</h2>
             </div>
-            <div class="mobileFeatBoxes"> 
+            <div class="mobileFeatBoxes">
                 <h2>Business</h2>
             </div>
             <div class="mobileFeatBoxes">
                 <h2>Marketing</h2>
-            </div>   
-        </div> 
+            </div>
+        </div>
     </feature>
-    <div class="exhibitTitle tablet">
-        <h1>Thesis Exhibit</h1>
-    </div>
-    <div class="exhibit desktop tablet"> 
-        <div class="vidArea">
-            <div class="actualVid">
-                <iframe width="320" height="545" controls=1
-                src="https://www.youtube.com/embed/ntQK_Oxx8lA" alt="">
-                </iframe>
+    <section class="thesisExhibit">
+        <div class="exhibitTitle">
+            <h1>Thesis Exhibit</h1>
+        </div>
+        <div class="exhibit desktop">
+            <div class="vidArea">
+                <div class="actualVid">
+                    <iframe width="320" height="545" controls=1 src="https://www.youtube.com/embed/ntQK_Oxx8lA" alt="">
+                    </iframe>
+                </div>
+                <div class="reimagine">
+                    <h2>Reimagine Urban</h2>
+                </div>
+                <div class="secondLatin">
+                    <p>"Curabitur vitae libero in ipsum portitor consequat. Aliquam et commodo lectus, nec consequat
+                        neque.
+                        Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor
+                        consequat, tristique ligula."</p>
+                </div>
             </div>
-            <div class="reimagine">
-                <h2>Reimagine Urban</h2>
-            </div>
-            <div class="secondLatin">
-                <p>"Curabitur vitae libero in ipsum portitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+            <div class="miniFeatures desktop">
+                <div class="minifeature fismaBox">
+                    <div class="miniFeat1">
+                        <img src="resources/images/thesis-fisma.jpg">
+                    </div>
+                    <div class="miniFeatBoxes">
+                        <div class="miniFeatTitle">
+                            <h2>Fisma: Design and Prototype</h2>
+                        </div>
+                        <div class="miniFeatDescp">
+                            <p>Designer showcse of new prototype product</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="minifeature nowAndThenBox">
+                    <div class="miniFeat1">
+                        <img src="resources/images/thesis-now-and-then.jpg">
+                    </div>
+                    <div class="miniFeatBoxes">
+                        <div class="miniFeatTitle">
+                            <h2>Now and Then</h2>
+                        </div>
+                        <div class="miniFeatDescp">
+                            <p>Research study about New York</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="miniFeatures desktop">
-            <div class="minifeature fismaBox">
-                <div class="miniFeat1">
-                    <img src="resources/images/thesis-fisma.jpg">
-                </div>
-                <div class="miniFeatBoxes">
-                    <div class="miniFeatTitle">
-                        <h2>Fisma: Design and Prototype</h2>
-                    </div>
-                    <div class="miniFeatDescp">
-                        <p>Designer showcse of new prototype product</p>
-                    </div>
-                </div>
-            </div>
-            <div class="minifeature nowAndThenBox">
-                <div class="miniFeat1">
-                    <img src="resources/images/thesis-now-and-then.jpg">
-                </div>
-                <div class="miniFeatBoxes">
-                    <div class="miniFeatTitle">
-                        <h2>Now and Then</h2>
-                    </div>
-                    <div class="miniFeatDescp">
-                        <p>Research study about New York</p>
-                    </div>
-                </div>
-            </div>
+        <div class="exhibitMobile mobile">
+            <iframe width="320" height="545" controls=1 src="https://www.youtube.com/embed/ntQK_Oxx8lA"
+                alt="your browser does not support the video.">
+            </iframe>
         </div>
-
-    </div>
-    <div class="exhibitMobile">
-        <iframe width="320" height="545" controls=1
-        src="https://www.youtube.com/embed/ntQK_Oxx8lA" alt="your browser does not support the video.">
-        </iframe>
-    </div>
-
+    </section>
 </body>
 <footer>
     <div class="copyRight">
         <p>© 2016 Colmar Academy. All rights reserved</p>
     </div>
-    <div class="termsAndPrivacy desktop tablet">
+    <div class="termsAndPrivacy desktop">
         <ul>
             <li><a href="#">Terms</a></li>
             <li><a href="#">Privacy</a></li>

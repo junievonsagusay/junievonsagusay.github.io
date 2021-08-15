@@ -1,576 +1,533 @@
 html {
     font-size: 16px;
-    font-family: Arial;
+    --web-color1: rgb(104, 102, 102);
+    --web-color2: rgb(56, 55, 55);
+    --web-color3: rgb(201, 200, 200);
+    font-family: Helvetica;
+    color: var(--web-color1)
 }
 
-body{
-    text-align: center;
-}
-/*header --------------------------*/
-
+/* header ----------------------------------------------------- */
 
 header {
+    display: inline-flex;
     position: fixed;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 4rem;
     top: 0;
     left: 0;
     z-index: 1;
+    justify-content: space-between;
+    width: 100%;
+    height: 4rem;
+    font-size: 1rem;
     background-color: white;
 }
 
-
 .companyLogo {
-    display: inline-flex;
-    color: gray;
-    font-size: 2rem;
+    display: flex;
+
 }
 
 .companyLogo img {
-    padding-top: 0.1rem;
-   
+    width: 100%;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
 }
 
 .companyLogo p {
-    margin-top: 0.5rem;
+    font-size: 2rem;
+    color: var(--web-color1);
+    margin-top: 0;
+    padding-top: 0.8rem;
 }
 
 .companyLogo span {
+    color: var(--web-color2);
     font-weight: 800;
-    color: rgb(80, 79, 79);
-
 }
 
-header ul {
+ul {
     display: inline-flex;
-   
+    padding-right: 1.5rem;
 }
 
-header li {
-    margin-right: 1.5rem;
+li {
+    padding: 1rem;
+    text-decoration: none;
     list-style-type: none;
-    margin-top: 0.5rem;
-    font-size: 1.1rem;
-    color: rgb(80, 79, 79);
-
+    font-weight: bold;
 }
 
 
-  li a:link {
+a:link {
+    color: var(--web-color1);
     text-decoration: none;
-    color: rgb(80, 79, 79);
-  }
-  
- li a:visited {
-    text-decoration: none;
-    color: rgb(80, 79, 79);
-  }
-  
- li a:hover {
-    color: rgb(41, 40, 40);
-    transition: font-size 300ms linear;
-    font-size: 1.2rem;
-  }
-  
- li a:active {
-    text-decoration: underline;
-  }
-
-
-  /*banner --------------------------*/
-.banner {
-    width: 100%;
 }
 
-  .bannerBox {
-    display: inline-flex;
-    margin-top: 3.5rem;
-    background-color: rgb(204, 203, 203);
-    width: 100%;
-    left: 0;
-    box-sizing: border-box;
-    
-  }
-
-.banner .bannerPic {
-    width: 60%;
+a:visited {
+    color: var(--web-color1);
 }
 
-.banner .bannerMsg {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    text-align: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-  .banner img {
-      width: 100%;
-      padding: 2rem;
-  }
-
-  .bannerMsg .learn {
-      color:rgb(80, 79, 79);
-      padding: 0 1rem;
-  }
-
-  h1 {
-      font-size: 3rem;
-      padding: 0 1rem;
-  }
-
-  .learn p {
-    font-size: 1rem;
-    padding: 0 1rem;
-  }
-
-  button {
-      width: 60%;
-      height: 100%;
-      color:white;
-      background-color: rgb(65, 62, 62);
-      font-size: 1.5rem;
-  }
-
- /*main --------------------------*/
-main div {
-   
+a:hover {
+    color: var(--web-color2);
+    font-size: larger;
+    transition: font-size 200ms linear;
 }
 
- main {
-   width: 100%;
+a:active {
+    color: var(--web-color1);
 }
 
- .mainBig {
-     display: inline-flex;
-     height: 55rem;
-     width: 100%;
-     box-sizing: border-box;
-     color: rgb(80, 79, 79);
-
- 
- }
-
-.mainBig .main60 {
-    width: 60%;
-    box-sizing: border-box;
-    align-content: space-between;
-    text-align: left;
-    padding: 2rem;
- }
-
-.mainBig .main40 {
-     width: 40%;
-     box-sizing: border-box;
-  }
-
- .mainSmall {
-     display: flex;
-     flex-direction: column;
- }
-
- .guyReading {
-     overflow: hidden;
- }
-
- .guyReading img {
-    width: 100%;
-    box-sizing: border-box;
- }
-
-.latinMsg {
-    font-size: 1.3rem;;
-}
-
- .right {
-    display: inline-flex;
-    box-sizing: border-box;
-    height: 30%;
-    margin: 1rem;
-}
-
- .smallMsgs {
-     display: flex;
-     flex-direction: column;
-     width: 60%;
-     padding: 1rem;
-     text-align: left;
-     color: rgb(94, 92, 92);
-
- }
-
-.smallMsgs a {
-    text-decoration: none;
-    font-weight: 600;
-    color: rgb(71, 99, 192);
-}
-
- .smallPics {
-     width:35%;
-     overflow: hidden;
- }
-
- .smallPics img {
-     padding: 2rem 1rem;
-     width: 100%;
-     box-sizing: border-box;
-     
- }
-
- .oliver {
-     background-color: rgb(201, 201, 201);
- }
-
- .topic {
-     font-size: 1.5rem;
- }
-
-  /*feature (Start Learning)--------------------------*/
 
 
+/* main ----------------------------------------------------- */
 
-.featureBig {
+main {
     position: relative;
+    top: 4rem;
+}
+
+.bannerBox {
+    display: inline-flex;
+    justify-content: center;
+    background-color: var(--web-color3);
+    width: 100%;
+}
+
+.bannerPic {
+    width: 60%;
+}
+
+.bannerPic img {
+    width: 90%;
+    padding: 2rem;
+}
+
+
+.bannerMsg {
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
-    height: 60rem;
-    width: 100%;
-    background-color: rgb(201, 201, 201);
+    align-content: center;
+    width: 40%;
+    padding: 5% 1.5rem 10% 3rem;
+    font-weight: bold;
 }
 
-.featureBig img {
-    width: 100%;
+h1 {
+    font-size: 3rem;
+    color: var(--web-color2);
 }
 
-.feature1, .feature2 {
+button {
+    display: flex;
+    height: 3rem;
+    background-color: var(--web-color1);
+    width: 70%;
+    justify-content: center;
+    padding-top: 0.8rem;
+    margin-top: 1rem;
+    color: rgb(204, 197, 197);
+}
+
+button:hover {
+    background-color: var(--web-color2);
+    color: white;
+    font-size: 1.05rem;
+    transition: font-size 200ms ease-in-out;
+
+}
+
+
+/* section ----------------------------------------------------- */
+
+section {
+    position: relative;
+    margin-top: 4rem;
+}
+
+.mainBig {
     display: flex;
     flex-direction: row;
-    box-sizing: border-box;
-    justify-content: center;
-    text-align: left;
-    height: 40%;
-    color: gray;
-}
-
-.mobileFeat {
-    display: none;
-}
-
-
-.indivBox {
-    width: 30%;
-    background-color: white;
-    max-width: 25rem;
-    min-width: 15rem;
-    margin: 0 1rem;
-    min-height: 20rem;
-    max-height: 30rem;
-}
-
-.coursePic {
-    height: 50%;
-    width: auto;
-}
-
-.coursePic img {
     width: 100%;
 }
 
-.nameOfCourse, .course, .courseInfo {
+.main60 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    padding-top: 1rem;
+}
+
+.guyReading {
+    width: 100%;
+
+}
+
+
+.guyReading img {
+    width: 90%;
+
+}
+
+.caption {
+    width: 85%;
+    height: 30%;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.main40 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.right {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+.topic h2 {
+    font-size: 1.5rem;
+    color: var(--web-color2);
+}
+
+
+
+.smallPics {
+    width: 40%;
+}
+
+.smallPics img {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.smallMsgs {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
     padding-left: 1rem;
+    justify-content: center;
+
+}
+
+.caption h2 {
+    color: var(--web-color2);
+    font-size: 2rem;
+}
+
+.readMore a {
+    color: rgb(59, 59, 255);
+}
+
+.orientation:hover {
+    background-color: var(--web-color3);
+}
+
+.campus:hover {
+    background-color: var(--web-color3);
+}
+
+.oliver:hover {
+    background-color: var(--web-color3);
+}
+
+/* feature ----------------------------------------------------- */
+
+.featureBig {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--web-color3);
     width: 100%;
-    box-sizing: border-box;
-    height: 5%
 }
 
 .start {
-    height: 10%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--web-color2);
 }
 
-.start h1 {
-    color: rgb(94, 92, 92);
+.feature1,
+.feature2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
 }
 
-  /*Exhibit --------------------------*/
-
-  .exhibitMobile {
-      display: none;
-  }
-
-  .exhibitTitle, .exhibit {
-    color: rgb(94, 92, 92);
-  }
-
-  .exhibit {
-      display: inline-flex;
-      width: 100%;
-  }
-
-  .vidArea {
-      width: 60%;
-
-  }
-.actualVid iframe {
-    width: 90%;
-
-}
-
-.reimagine, .secondLatin {
-    text-align: left;
-    width: 90%;
-    margin-left: 5%;
-}
-
-  .miniFeatures {
+.indivBox {
     display: flex;
     flex-direction: column;
-    width: 40%;
-   align-content: space-between;
-  }
+    width: 30%;
+    margin: 0 1rem 1rem 0;
+    background-color: white;
+}
+
+.indivBox img {
+    width: 100%;
+
+}
+
+.nameOfCourse,
+.course,
+.courseInfo {
+    padding: 0 1rem;
+}
+
+.nameOfCourse h2 {
+    font-size: 1.5rem;
+    color: var(--web-color2);
+}
+
+@media only screen and (min-width: 769px) {
+
+    .mobile {
+        display: none;
+    }
+}
+
+/* section ----------------------------------------------------- */
+
+.thesisExhibit {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.exhibitTitle h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.exhibit {
+    display: flex;
+    flex-direction: row;
+}
+
+.vidArea {
+    width: 55%;
+}
+
+/* to make a responsive youtube embed ------- */
+.actualVid {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 0;
+}
+
+.actualVid iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* to make a responsive youtube embed ------- */
+.miniFeatures {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin: 0 1rem;
+}
 
 .minifeature {
-    display: inline-flex;
-
-}
-
-.miniFeatBoxes {
     display: flex;
-    flex-direction: column;
-    width: 65%;
-    justify-content: left;
+    flex-direction: row;
+
 }
 
-.minifeat1 {
-    width: 35%;
+.minifeature:hover {
+    background-color: var(--web-color3);
+}
+
+.miniFeat1 {
+    width: 30%;
+    overflow: hidden;
+}
+
+.miniFeatDescp {
+    width: 70%;
 }
 
 .miniFeat1 img {
-    width: 100%;
+    width: 90%;
+    padding: 0.5rem;
 }
 
-
-.miniFeatBoxes img {
-    width: 100%;
-}
-
-.miniFeatTitle, .miniFeatDescp {
-    text-align: left;
-    padding: 0.5rem 0 0 2rem;
-}
-
-   /*Footer --------------------------*/
-
-  footer {
-      bottom: 0;
-      display: flex;
-      justify-content: space-between;
-      border-top: 1px solid rgb(94, 92, 92);
-      color: rgb(94, 92, 92);
-  }
-
-  .copyRight {
+.miniFeatBoxes {
     padding-left: 1rem;
-  }
-
-  footer ul {
-     display: inline-flex;
-  }
-
-  footer ul li {
-    margin: 0 0.5rem;
-    list-style-type: none;
-  }
-
-  footer ul li a {
-    text-decoration: none;
-  }
-
-  /*Media Queries --------------------------*/
-
-
-
-  /*PC Screen --------------------------*/
-  @media only screen and (min-width: 769) and (max-width: 2560px) {
- 
-   .mobile {
-    display: none;
-    }
- 
 }
 
-/*tablet Screen --------------------------*/
-@media only screen and (max-width: 768px) {
+.miniFeatBoxes h2,
+.reimagine h2 {
+    font-size: 1.5rem;
+    color: var(--web-color2);
+}
+
+/* footer ----------------------------------------------------- */
+
+footer {
+    display: inline-flex;
+    margin-top: 1rem;
+    border-top: 1px solid var(--web-color3);
+    width: 100%;
+    justify-content: space-between;
+}
+
+.copyRight {
+    padding-left: 2rem;
+}
+
+/* mobile screens ----------------------------------------------------- */
+
+@media only screen and (min-width: 320px) and (max-width: 850px) {
 
     .desktop {
-         display: none;
-    }
-
-    .featureBig .desktop {
         display: none;
     }
 
-    .mobile {
-    
-        position: fixed;
+    /* header ------- */
+    .mobileHeader {
         display: flex;
-        justify-content: space-between;
-        width: 100%;
-        height: 4rem;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        background-color: white;
+        justify-content: space-around;
     }
 
-    .mobile img {
-        padding: 0.7rem 2rem;
+    .mobileHeader img {
+        width: 90%;
+        padding: 0.5rem;
     }
 
-    .banner div {
-        display: block;
-     }
-
-    h1 {
-        font-size: 2rem;
-        
-    }
-
-    p, button {
-        font-size: 1rem;
-    }
-
+    /* main ------- */
     .bannerBox {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .bannerPic {
         width: 100%;
 
     }
 
-    .banner .bannerMsg, .banner .bannerPic {
-        width: 100%;
-    }
 
-     .bannerPic img {
+    .bannerPic img {
+        width: 100%;
         padding: 0;
     }
 
-    .mainBig .main40 {
+    .bannerMsg {
+        display: flex;
+        flex-direction: column;
         width: 100%;
-
+        padding: 0 0 1rem 0;
+        text-align: center;
     }
 
-    .mainBig {
-        height: auto;
+.banner h1 {
+    font-size: 2rem;
+}
+
+    button {
+
+        margin: 0 5%;
+        width: 90%;
     }
 
-    .right {
-        display: block;
-        margin-top: 1rem;
-        padding: 0 1rem;
-        height: auto;
-    }
+    .button {}
 
-    .smallPics {
+    /* section mainSmall ------- */
+
+    .main40,
+    .right,
+    .smallPics,
+    .smallMsgs {
+        display: flex;
+        flex-direction: column;
         width: 100%;
     }
 
     .smallPics img {
-  
         padding: 0;
+        width: 100%;
     }
 
     .smallMsgs {
         padding-left: 1rem;
-        width: 100%;
+        width: 80%;
     }
 
-    .right.oliver {
-        background-color: white;
-    }
-    
-    .smallMsgs h2 {
-        margin: 0.1rem 0 0 0;
+    .topic h2 {
+        margin: 1rem 0 0 0;
     }
 
-    .mobileFeat {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        border-top: 0.3px solid rgb(190, 190, 190);
-        border-bottom: 0.3px solid rgb(190, 190, 190);
-        margin-bottom: 2rem;
-        padding-bottom: 2rem;
+    .readMore {
+        padding-bottom: 1rem;
+    }
+
+    /* feature ------- */
+
+
+    .mobileFeatBox1 {
+        text-align: center;
+        border-top: 1px solid gray;
     }
 
     .mobileFeatBox1 h1 {
-        position: relative;
-        font-size: 2.5rem;
-        color: rgb(94, 92, 92);
-        background-color: white;
-        margin: 0 0 1rem 0;
-        padding: 2rem 0 0 1rem;
-        font-weight: bolder;
-    }
-
-    .mobileFeatBox2 {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        color: rgb(94, 92, 92);
-
+        font-size: 2rem;
     }
 
     .mobileFeatBoxes {
+        height: 4rem;
+        background-color: var(--web-color3);
         margin: 0.5rem;
-        background-color: rgb(204, 203, 203);
+    }
+
+    .mobileFeatBoxes:hover {
+        background-color: var(--web-color1);
+        color: white;
     }
 
     .mobileFeatBoxes h2 {
-        padding-left: 2rem;
+        padding: 1rem 0 0 2rem;
+        color: var(--web-color2);
+        margin: 0;
     }
 
-    .exhibitTitle h1 {
-        font-size: 2.5rem;
-        color: rgb(94, 92, 92);
-    }
+/* Section thesisExhibit ------- */
 
-    /* making youtube videos responsive --------------------------- */
+/* to make a responsive youtube embed ------- */
+.exhibitMobile {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 0;
+}
 
+.exhibitMobile iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
-    .exhibitMobile{
-        display: block;
-        position: relative;
-        width: 100%;
-        padding-bottom: 56.25%;
-        height: 0;
-    }
-
-    .exhibitMobile iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-footer {
-    margin-top: 2.5rem;
-    border-top: none;
+/* to make a responsive youtube embed ------- */
+ 
+.copyRight {
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    padding: 0;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
